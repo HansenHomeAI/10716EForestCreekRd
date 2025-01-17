@@ -360,7 +360,20 @@
 }
 
         
-        
+      /* Prevent text selection and highlight */
+body, iframe, div, p, h1, h2, h3, h4, h5, h6, span {
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+}
+
+/* Prevent long-press highlight behavior on mobile */
+body, iframe, div, p, h1, h2, h3, h4, h5, h6, span {
+    -webkit-touch-callout: none;
+    -webkit-tap-highlight-color: transparent;
+}
+  
         
         
         
